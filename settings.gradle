@@ -1,0 +1,3 @@
+rootProject.name = "sentence-generator"
+
+include 'server'

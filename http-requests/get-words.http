@@ -1,0 +1,13 @@
+GET localhost:7070/words
+Content-Type: application/json
+
+{}
+
+###
+
+GET localhost:7070/words/home
+Content-Type: application/json
+
+{}
+
+###

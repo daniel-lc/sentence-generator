@@ -1,0 +1,6 @@
+POST localhost:7070/sentences/generate
+Content-Type: application/json
+
+{}
+
+###

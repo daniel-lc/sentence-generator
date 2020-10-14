@@ -1,0 +1,26 @@
+PUT localhost:7070/words/home
+Content-Type: application/json
+
+{
+  "wordCategory": "NOUN"
+}
+
+###
+
+PUT localhost:7070/words/stand
+Content-Type: application/json
+
+{
+  "wordCategory": "VERB"
+}
+
+###
+
+PUT localhost:7070/words/straight
+Content-Type: application/json
+
+{
+  "wordCategory": "ADJECTIVE"
+}
+
+###

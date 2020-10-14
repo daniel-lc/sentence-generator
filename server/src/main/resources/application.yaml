@@ -1,0 +1,11 @@
+server:
+  port: 7070
+logging:
+  level:
+    com.gooddata.app: DEBUG
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/testdb
+    username: test
+    password: test
+    driver-class-name: org.postgresql.Driver

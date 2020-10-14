@@ -1,0 +1,20 @@
+GET localhost:7070/sentences
+Content-Type: application/json
+
+{}
+
+######
+
+GET localhost:7070/sentences/a45628aa-1001-428f-8cb1-176f39c23f43
+Content-Type: application/json
+
+{}
+
+###
+
+GET localhost:7070/sentences/a45628aa-1001-428f-8cb1-176f39c23f43/yodaTalk
+Content-Type: application/json
+
+{}
+
+###
