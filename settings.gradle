@@ -1,3 +1,4 @@
 rootProject.name = "sentence-generator"
 
 include 'server'
+include 'integration-tests'

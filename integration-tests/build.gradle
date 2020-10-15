@@ -1,0 +1,31 @@
+apply plugin: 'io.spring.dependency-management'
+apply plugin: 'org.springframework.boot'
+apply plugin: "kotlin-spring"
+apply plugin: 'kotlin'
+
+sourceCompatibility = "11"
+targetCompatibility = "11"
+
+bootJar {
+  enabled = false
+}
+jar {
+  enabled = true
+}
+
+dependencies {
+  implementation project(":server")
+  implementation("junit:junit:4.12")
+  implementation("io.projectreactor:reactor-test:3.3.5.RELEASE")
+  implementation("org.springframework.boot:spring-boot-starter-webflux")
+  implementation("org.springframework.boot:spring-boot-starter-test")
+  implementation("org.jetbrains.kotlin:kotlin-reflect")
+  implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
+  implementation("io.mockk:mockk:1.10.2")
+  implementation("io.rest-assured:rest-assured:$restAssuredVersion")
+  implementation("io.rest-assured:rest-assured-common:$restAssuredVersion")
+  implementation("io.rest-assured:json-path:$restAssuredVersion")
+  implementation("io.rest-assured:xml-path:$restAssuredVersion")
+  implementation("io.rest-assured:json-schema-validator:$restAssuredVersion")
+  implementation("io.rest-assured:kotlin-extensions:$restAssuredVersion")
+}

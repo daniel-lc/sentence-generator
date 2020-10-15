@@ -37,6 +37,7 @@ class SentenceService(
             .map { SentenceDto.ModelMapper.from(it, yodaSentence = true) }
             .switchIfEmpty(SentenceNotExistsException(sentenceID, "SentenceID: $sentenceID not found.").toMono())
 
+    // todo: tracking is not working correctly, cause it's not updating row
     fun generateSentence(categorizedWords: MutableMap<WordCategory, MutableCollection<WordDto>>): Mono<SentenceDto> = Mono
             .defer { categorizedWords.toMono() }
             .map { SentenceGenerator.composeSentence(it[WordCategory.NOUN], it[WordCategory.VERB], it[WordCategory.ADJECTIVE]) }
