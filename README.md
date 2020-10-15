@@ -1,7 +1,7 @@
 # sentence-generator
 
 Server application which exposing api for generating sentences. 
-It's written with functional "flavour" in Spring webflux framework.
+It's written with functional "flavour" in Spring webflux framework and using PostgreSQL as a persistent storage.
 
 App is running on the http://localhost:7070
 
